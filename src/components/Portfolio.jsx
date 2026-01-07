@@ -23,13 +23,14 @@ const Portfolio = () => {
         "A powerful and interactive web application built with React and React Router, featuring modern UI interactions such as search, sorting, toast notifications, dynamic app installation & deletion, app detail view, and data visualization charts.",
       image: "https://i.ibb.co.com/QvFZspPg/Screenshot-23.png",
       tags: ["React", "Tailwind"],
+      tages: ["React", "Tailwind"],
       version: "v2.0",
       LiveUrl: "https://spectacular-strudel-c84562.netlify.app/",
       githubLink: "https://github.com/hsagor703/assignment-8-hero-apps",
       challenges:
         "Implementing real-time inventory sync was difficult for me in this project but i can done this",
       futurePlans:
-        "React | JSReact Router DOM | React Icons | React Hot Toast | Chart Library (Recharts / Chart.js) | LocalStorage for installed app management",
+        "React.JS | React Router DOM | React Icons | React Hot Toast | Chart Library (Recharts / Chart.js) | LocalStorage for installed app management",
     },
     {
       id: 2,
@@ -37,10 +38,11 @@ const Portfolio = () => {
       description:
         "PawMart is a community-driven platform where pet owners, breeders, and shops can list pets for adoption or sell pet-related products (food, toys, accessories, etc.). Buyers and adopters can browse, contact, and order directly.",
       image: "https://i.ibb.co.com/fYFS9DK8/Screenshot-21.png",
-      tags: ["React", "Firebase"],
+      tags: ["React", "Firebase", "Authentication"],
+      tages: ["React", "Firebase"],
       LiveUrl: "https://pawmart-assignment.web.app/",
       githubLink: "https://github.com/hsagor703/pawmaert-assignment-10",
-      Challenges:
+      challenges:
         "Ensuring that different users could easily list pets or products, browse available options, and communicate safely without making the platform complex or confusing.",
       futurePlans:
         "🧑‍💻 User Authentication (SIGHUP & Login with Firebase) | 🐶 Pet Services Listing (with image, name, price & rating) | 🔍 View Details Page for each  |  Why Adopt from PawMart? section | 👩‍⚕️ Meet Our Pet Heroes section | 📱 Responsive Design for all devices | 🔔 Error & Success Toast Messages | 🔄 Loading Spinner while data is fetching | 🧭 Persistent Navbar & Footer | 🌐 Persistent backend server side",
@@ -51,7 +53,15 @@ const Portfolio = () => {
       description:
         "AssetVerse is a Corporate Asset Management System designed to help companies efficiently manage physical assets (laptops, accessories, furniture, etc.) and track asset assignments across employees. It simplifies HR operations, improves accountability, and",
       image: "https://i.ibb.co.com/3yn4wsVr/Screenshot-22.png",
-      tags: ["React", "Firebase", "Stripe"],
+      tags: [
+        "React",
+        "Firebase",
+        "Stripe",
+        "Authentication",
+        "Authorization",
+        "JWT Token",
+      ],
+      tages: ["React", "Firebase", "Stripe"],
       LiveUrl: "https://final-assignment-4c484.web.app/",
       githubLink: "https://github.com/hsagor703/final-assignment-client",
       challenges:
@@ -115,7 +125,7 @@ const Portfolio = () => {
             </div>
             <div className="p-6 flex flex-col flex-grow">
               <div className="flex gap-2 mb-4">
-                {project.tags.map((tag, tagIndex) => (
+                {project.tages.map((tag, tagIndex) => (
                   <span
                     key={tagIndex}
                     className={`px-3 py-1 text-xs font-bold tracking-wide rounded-full ${getTagColor(
@@ -154,7 +164,10 @@ const Portfolio = () => {
                       <div className="">
                         <div className="max-w-4xl mx-auto">
                           {/* Back Button */}
-                          <button onClick={() => setSelectedProject(null)} className="flex items-center gap-2 text-gray-400 hover:text-purple-500 transition-colors mb-8 group">
+                          <button
+                            onClick={() => setSelectedProject(null)}
+                            className="flex items-center gap-2 text-gray-400 hover:text-purple-500 transition-colors mb-8 group"
+                          >
                             <ArrowLeft
                               size={20}
                               className="group-hover:-translate-x-1 transition-transform"
@@ -163,7 +176,7 @@ const Portfolio = () => {
                           </button>
 
                           {/* Project Header */}
-                          <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
+                          <div className="flex flex-col col-span-12 md:flex-row md:items-end justify-between gap-6 mb-12">
                             <div>
                               <h1 className="text-2xl md:text-4xl font-bold mb-4">
                                 {selectedProject.title}
@@ -187,7 +200,8 @@ const Portfolio = () => {
                                 rel="noreferrer"
                                 className="flex items-center gap-2 bg-purple-600 hover:bg-purple-700 px-6 py-3 rounded-xl font-semibold transition-all shadow-lg shadow-purple-500/20"
                               >
-                                <ExternalLink size={18} /> Live Demo
+                                <ExternalLink size={18} />{" "}
+                                <span className="text-sm">Live Demo</span>
                               </a>
                               <a
                                 href={selectedProject.githubLink}
@@ -195,7 +209,8 @@ const Portfolio = () => {
                                 rel="noreferrer"
                                 className="flex items-center gap-2 bg-[#1a1438] border border-white/10 hover:border-purple-500 px-6 py-3 rounded-xl font-semibold transition-all"
                               >
-                                <Github size={18} /> Client Code
+                                <Github size={18} />
+                                <span className="text-sm">Client Code</span>
                               </a>
                             </div>
                           </div>
@@ -217,8 +232,8 @@ const Portfolio = () => {
                                 <Target className="text-purple-500" /> Project
                                 Overview
                               </h3>
-                              <p className="text-gray-400 leading-relaxed text-lg">
-                                {project.description}
+                              <p className="text-gray-400 leading-relaxed text-sm">
+                                {selectedProject.description}
                               </p>
                             </section>
 
@@ -230,8 +245,8 @@ const Portfolio = () => {
                                 <Cpu className="text-red-400" /> Challenges
                                 Faced
                               </h3>
-                              <p className="text-gray-400 leading-relaxed">
-                                {project.challenges}
+                              <p className="text-gray-400 leading-relaxed text-sm">
+                                {selectedProject.challenges}
                               </p>
                             </section>
 
@@ -241,8 +256,8 @@ const Portfolio = () => {
                                 <Rocket className="text-green-400" /> Future
                                 Plans
                               </h3>
-                              <p className="text-gray-400 leading-relaxed">
-                                {project.futurePlans}
+                              <p className="text-gray-400 leading-relaxed text-sm">
+                                {selectedProject.futurePlans}
                               </p>
                             </section>
                           </div>

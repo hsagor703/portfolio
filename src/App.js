@@ -5,12 +5,10 @@ import TechStack from "./components/TechStack";
 import Services from "./components/Services";
 import Portfolio from "./components/Portfolio";
 import Experience from "./components/Experience";
-import Testimonials from "./components/Testimonials";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import "./App.css";
 import AboutSection from "./components/AboutSection";
-import ProjectDetails from "./components/ProjectDetails";
 import LoadingPage from "./components/LoadingPage";
 
 function App() {
@@ -39,7 +37,6 @@ function App() {
             <TechStack />
             <Services />
             <Portfolio />
-            {/* <ProjectDetails/> */}
             <Experience />
             {/* <Testimonials /> */}
             <Contact />

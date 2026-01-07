@@ -43,7 +43,7 @@ const Portfolio = () => {
       Challenges:
         "Ensuring that different users could easily list pets or products, browse available options, and communicate safely without making the platform complex or confusing.",
       futurePlans:
-        "🧑‍💻 User Authentication (SIGHUP & Login with Firebase)🐶 Pet Services Listing (with image, name, price & rating)🔍 View Details Page for each service❄️ Why Adopt from PawMart? section👩‍⚕️ Meet Our Pet Heroes section📱 Responsive Design for all devices🔔 Error & Success Toast Messages🔄 Loading Spinner while data is fetching🧭 Persistent Navbar & Footer🌐 Persistent backend server side",
+        "🧑‍💻 User Authentication (SIGHUP & Login with Firebase) | 🐶 Pet Services Listing (with image, name, price & rating) | 🔍 View Details Page for each  |  Why Adopt from PawMart? section | 👩‍⚕️ Meet Our Pet Heroes section | 📱 Responsive Design for all devices | 🔔 Error & Success Toast Messages | 🔄 Loading Spinner while data is fetching | 🧭 Persistent Navbar & Footer | 🌐 Persistent backend server side",
     },
     {
       id: 3,
@@ -57,7 +57,7 @@ const Portfolio = () => {
       challenges:
         "Implementing real-time inventory synchronization was challenging because inventory data needed to update instantly for multiple users without causing data conflicts.",
       futurePlans:
-        "🔐 Role-based authentication (HR & Employee)🏢 HR can manage company assets (add, update, delete)👨‍💼 Employee can request assets✅ HR approval & rejection system📊 Asset tracking (returnable & non-returnable)📈 Dashboard with summary & charts💳 Subscription-based employee limits (Stripe payment)🔍 Search & filter assets and requests📱 Fully responsive UI🔒 Protected routes & authorization📦 npm Packages Used",
+        "🔐 Role-based authentication (HR & Employee) | 🏢 HR can manage company assets (add, update, delete) | 👨‍💼 Employee can request assets | ✅ HR approval & rejection system | 📊 Asset tracking (returnable & non-returnable) | 📈 Dashboard with summary & charts | 💳 Subscription-based employee limits (Stripe payment) | 🔍 Search & filter assets and requests | 📱 Fully responsive UI | 🔒 Protected routes & authorization | 📦 npm Packages Used",
     },
   ];
 
